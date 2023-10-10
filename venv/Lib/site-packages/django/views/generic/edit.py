@@ -165,7 +165,7 @@ class BaseFormView(FormMixin, ProcessFormView):
 
 
 class FormView(TemplateResponseMixin, BaseFormView):
-    """A view for displaying a form and rendering a template response."""
+    """A view for displaying a form and rendering a templates response."""
 
 
 class BaseCreateView(ModelFormMixin, ProcessFormView):
@@ -186,7 +186,7 @@ class BaseCreateView(ModelFormMixin, ProcessFormView):
 
 class CreateView(SingleObjectTemplateResponseMixin, BaseCreateView):
     """
-    View for creating a new object, with a response rendered by a template.
+    View for creating a new object, with a response rendered by a templates.
     """
 
     template_name_suffix = "_form"
@@ -209,7 +209,7 @@ class BaseUpdateView(ModelFormMixin, ProcessFormView):
 
 
 class UpdateView(SingleObjectTemplateResponseMixin, BaseUpdateView):
-    """View for updating an object, with a response rendered by a template."""
+    """View for updating an object, with a response rendered by a templates."""
 
     template_name_suffix = "_form"
 
@@ -288,7 +288,7 @@ class BaseDeleteView(DeletionMixin, FormMixin, BaseDetailView):
 class DeleteView(SingleObjectTemplateResponseMixin, BaseDeleteView):
     """
     View for deleting an object retrieved with self.get_object(), with a
-    response rendered by a template.
+    response rendered by a templates.
     """
 
     template_name_suffix = "_confirm_delete"
