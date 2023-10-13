@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'seminar1app',
     'seminar2app',
-    'seminar3app',
+    'seminar4app',
+
 ]
 
 MIDDLEWARE = [
@@ -54,10 +55,9 @@ ROOT_URLCONF = 'Seminars.urls'
 
 TEMPLATES = [
     {
-        'BACKEND':
-            'django.template.backends.django.DjangoTemplates',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
+            BASE_DIR / 'templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
