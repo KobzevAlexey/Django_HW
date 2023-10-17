@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'seminar1app',
     'seminar2app',
+<<<<<<< HEAD
     'seminar4app',
 
+=======
+    'seminar5app'
+>>>>>>> hw5_branch
 ]
 
 MIDDLEWARE = [
@@ -117,6 +121,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -133,7 +140,10 @@ LOGGING = {
         'simple': {
             'format': '%(levelname)s %(message)s'
         },
+<<<<<<< HEAD
 
+=======
+>>>>>>> hw5_branch
     },
     'handlers': {
         'console': {
@@ -151,7 +161,11 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
+<<<<<<< HEAD
         'Seminars': {
+=======
+        'task_app': {
+>>>>>>> hw5_branch
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
