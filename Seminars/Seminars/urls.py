@@ -16,22 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-<<<<<<< HEAD
-from seminar4app.views import create_product
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path('', include('seminar1app.urls')),
-    path('create/', create_product, name='create-product'),
-
-=======
 from Seminars import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('seminar5app.urls')),
->>>>>>> hw5_branch
 ]
 
 if settings.DEBUG:
