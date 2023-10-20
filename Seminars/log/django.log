@@ -86,3 +86,6 @@ INFO     |2023-10-20 15:35:27,493| "GET /static/admin/img/icon-addlink.svg HTTP/
 INFO     |2023-10-20 15:35:27,493| "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
 INFO     |2023-10-20 15:35:32,069| "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
 INFO     |2023-10-20 15:35:32,077| "GET /admin/ HTTP/1.1" 200 7109
+INFO     |2023-10-20 15:37:42,379| Watching for file changes with StatReloader
+INFO     |2023-10-20 15:37:49,979| "GET / HTTP/1.1" 200 649
+INFO     |2023-10-20 16:08:48,101| D:\My education\Django_HW\Seminars\Seminars\settings.py changed, reloading.
